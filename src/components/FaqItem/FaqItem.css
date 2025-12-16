@@ -1,0 +1,46 @@
+.mtrance {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.pulsing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.blackplus {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.new {
+  max-height: 220px;  /* ✅ cap height */
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.new p {
+  margin: 10px 0 0 0; /* remove extra space */
+  line-height: 1.5;
+}
+
+
+@media (max-width:500px) {
+    .pulsing p{
+        font-size: 1.1em;
+    }
+    .questanswer{
+            padding: 10vw 1vw;
+
+    }
+}

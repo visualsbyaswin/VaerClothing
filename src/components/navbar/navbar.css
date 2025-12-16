@@ -1,0 +1,152 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 333;
+  height: 10vh;
+  position: fixed;
+  align-items: center;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1);
+
+  background-color: rgb(255, 255, 255);
+  padding: 2vw 2vw;
+}
+
+.hamburger svg {
+  width: 28px;
+  height: 28px;
+  perspective: none;
+}
+
+.endnavheading {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.navheading p,
+.time p {
+  font-size: 22px;
+  color: #262626;
+}
+
+/* Fullscreen Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  /* hidden */
+  width: 100%;
+
+  height: 35%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.5s ease;
+  z-index: 250;
+}
+
+.menu-overlay.show {
+  top: 63px;
+  /* visible */
+}
+
+.menu-overlay ul {
+  list-style: none;
+  text-align: center;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: hahahha;
+  src: url("../../assets/fonts/HostGrotesk-Light-BF65bb091d17f03.otf");
+}
+.menu-overlay ul li {
+  margin: 25px 0;
+  font-family: Manrope,hahahha;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.count{
+height: 20px;
+    position: absolute;font-weight: 450;
+    width: 20px;
+    color: #252525;font-size: 12px;
+    border-radius: 6px;
+    right: -7px;
+    text-align: center;
+    z-index: -15;
+    top: -8px;
+    background-color: #f7f7f7;
+}
+
+.menu-overlay a {
+  text-decoration: none;
+}
+.bag{
+  position: relative;  
+
+}
+.time p{
+
+
+    font-size: 1.3em;
+    font-style: normal;
+
+
+    font-weight: 700;
+    letter-spacing: 0em;
+    line-height: 1.4em;
+font-family: lght,sans-serif;
+    text-align:start;
+    color: #252525 ;text-decoration: none;
+  
+}
+.menu-overlay ul li a:hover {
+  color: #999;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hamburger {
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+/* When active (menu open), rotate 90deg */
+.hamburger.active {
+  transform: rotate(90deg);
+}
+
+
+@font-face {
+    font-family: lght;
+    src: url("../../assets/fonts/HostGrotesk-Light-BF65bb091d17f03.otf");
+}
+
+@media (max-width:768px) {
+  .menu-overlay ul li{
+    font-size: 0.88em;
+  }
+  .menu-overlay{
+    height: auto;
+  }
+}

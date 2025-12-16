@@ -1,0 +1,260 @@
+.productsection {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 2vw;
+    min-height: 100vh;
+}
+.ddd{
+    overflow: hidden;
+}
+
+.imageection {
+    width: 40%;
+    /* background-color: blue; */
+    /* min-height: 105vh; */
+}
+
+
+@font-face {
+    font-family: nive;
+    src: url("../../assets/fonts/HostGrotesk-Light-BF65bb091d17f03.otf");
+}
+
+.allpoliciestext {
+    width: 50%;margin-bottom: 100px;
+    /* background-color: rgb(255, 136, 0); */
+    min-height: 80vh;
+}
+.mtrance{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 1vw;
+}
+.contents {
+    width: 100%;
+    padding: 1vw;
+    flex-direction: column;
+    display: flex;
+    gap: 1.2em;
+
+    background-color: #ffffff;
+}
+
+.fcontents {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.drop p {
+    color: rgb(153 153 153);
+    font-size: 1.2em;
+}
+
+.fcontents h1 {
+    font-size: 2.1em;
+
+    font-family: Manrope, "Manrope Placeholder", sans-serif;
+}
+
+.fcontents:nth-child(3) {
+    font-style: 1.2em;
+    color: #252525;
+}
+
+.sizesmxl {
+    width: 100%;
+    display: flex;
+    height: auto;
+    gap: 10px;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+
+.collectionofsizes {
+    display: flex;
+    gap: 1em;
+}
+
+.collectionofsizes div {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #d1d1d1;
+    background-color: #f7f7f7;
+    justify-content: center;
+    font-family: Manrope, "Manrope Placeholder", sans-serif;
+}
+
+
+.collectbutton button {
+    width: 90%;
+    transition: 0.4s ease-in all;
+    height: 7vh;
+    background-color: white;
+    font-family: Manrope, "Manrope Placeholder", sans-serif;
+    border: none;
+    font-size: 1.2em;
+    border: 1px solid #d1d1d1;
+
+    outline: none;
+}
+
+.collectbutton button:hover {
+    background-color: black;
+    color: white;
+}
+
+.collectionofsizes .active {
+    width: 45px;
+    color: #fff;
+    height: 45px;
+    background-color: black;
+}
+
+.questanswer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* background-color: red; */
+    padding: 1vw;
+    gap: 2em;
+
+    flex-direction: column;
+}
+
+.pulsing {
+    display: flex;
+    height: 7vh;
+    text-align: center;
+    align-items: center;
+
+    padding: 1vw 1vw;
+    justify-content: space-between;
+}
+
+.pulsing p {
+    font-size: 1.4em;
+    font-family: Manrope, "Manrope Placeholder", sans-serif;
+    font-weight: 500;
+
+}
+
+.blackplus {
+    width: 20px;
+    font-size: 1.2em;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f7f7f7;
+    font-family: Manrope, "Manrope Placeholder", sans-serif;
+    background-color: #252525;
+    border-radius: 10%;
+}
+
+
+@media (max-width:768px) {
+    .productsection {
+        flex-direction: column;
+    }
+
+    .imageection {
+        width: 100%;
+    }
+
+    .allpoliciestext {
+        width: 100%;
+    }
+
+
+
+    .pulsing p {
+        font-size: 1.1em;
+    }
+
+    .drop p {
+
+        font-size: 1em;
+    }
+    .fcontents h1 {
+    font-size: 1.7em;}
+}
+
+
+.cartdrawer{
+    position: fixed;
+    top: 60px;
+    right: 1px;
+    width: 503px;
+    padding: 2vw 2vw;
+    height: 95%;
+    background-color: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+    transform: translateX(100%);
+    transition: transform 0.8s 
+ease-in-out;
+    /* padding: 20px; */
+    display: flex
+;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0;
+
+}
+.cartdrawer.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout {
+  background: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear {
+  border: 1px solid black;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+
+.fcontents p{
+    font-size: 1.2em;font-weight: 500;
+}
+.price{
+    font-size: 1.2em;font-weight: 500;
+}

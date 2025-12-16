@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: varo;
+
+}
+
+main {
+  padding: 1vw 1vw;
+}
+
+@font-face {
+  font-family: varo;
+  src: url("./assets/fonts/HostGrotesk-Black-BF65bb091d5f745.otf");
+}
+
+@font-face {
+  font-family: hahaha;
+  src: url("./assets/fonts/HostGrotesk-Regular-BF65bb091d50206.otf");
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+
+.homecontents h1,
+p {
+  font-weight: 900;
+  font-family: hahaha, "Host Grotesk Placeholder", sans-serif;
+  font-weight: 100;
+}
+/* .mousemove{
+  width: 45px;
+  width: 45px;
+  background-color: black;
+  position: absolute;display: flex;justify-content: center;overflow: hidden;
+} *//* Hide default cursor */
+
+/* Custom cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+    background-color:  rgba(173, 173, 173, 0.75);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+
+  z-index: 9999;
+}
+.page-transition {overflow-x: hidden;
+  min-height: 100vh;
+  background-color: aliceblue;
+
+  width: 100%;
+}

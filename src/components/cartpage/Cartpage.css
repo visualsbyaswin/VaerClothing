@@ -1,0 +1,146 @@
+.cartsection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+position: relative;
+    background-color:#fff;
+  
+}
+
+.cardscart {
+
+    display: flex;
+    padding: 1vw 1vw;
+  gap: 1em;
+
+
+}
+
+.maincart{
+  overflow-y: scroll;
+    padding: 1vw 2vw;
+    flex-direction: column;
+    gap: 1em;
+    display: flex
+;
+}
+
+.contentscart {
+    display: flex;
+justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.imagecart {
+   width: 50%;
+    height: 105px;
+}
+
+.imagecart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fcartp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.scartp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7em;
+    width: 100%;
+}
+
+.control {
+background-color: #f7f7f7;
+    border: 1px solid #6b6b6b47;
+    padding: 3px 3px;display: flex;
+}
+
+.control button {
+    width: 26px;font-size: 1em;
+    height: 26px;
+    border: none;text-align: center;
+    outline: none;
+}
+
+.control input {
+    width: 26px;font-size: 1em;
+    border: none;text-align: center;
+    outline: none;
+    height: 26px;
+}
+
+.rdo button {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: #f7f7f7;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.pttt{
+    padding: 1vw 2vw;
+}
+.pttt p{
+    font-size: 1.1em;text-align: center;
+    font-weight: 650;
+}
+.cartpay{
+    width: 100%;display: flex;
+    flex-direction: column;gap: 1em;
+    min-height: 25vh;
+    top: 12%;
+    /* background-color: red; */
+}
+.carttotal p{
+    font-size: 1.1em;
+    font-weight: 560;padding: 0vw 2vw;
+}
+.carttotal{
+    display: flex;
+    justify-content: space-between;
+}
+.cartbuttons{
+    display: flex
+;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    
+    padding: 1vw 1vw;
+
+}
+.check {
+    padding: 1vw 2vw;
+    height: 8vh;
+    border: none;
+    background-color: black;
+    font-size: 1.2em;
+    width: 81%;color: white;
+    outline: none;
+}
+.clear{
+        padding: 1vw 2vw;
+    height: 8vh;
+    border: none;
+    background-color: #f7f7f7;
+    font-size: 1.2em;
+    width: 81%;color: rgb(0, 0, 0);
+    outline: none;
+}
+@media (max-width:765px) {
+    .c{
+        width: 100%;
+    }
+}

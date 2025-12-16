@@ -1,0 +1,120 @@
+.page1 {
+    width: 100%;
+    min-height: 91vh;
+    display: flex;overflow-x: hidden;
+    flex-direction: column;
+    position: relative;
+    /* padding: 0vw 2vw; */
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.imgdiv {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.homeimg {
+    width: 100%;
+    height: 108vh;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.homeimg img {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-position: center top;
+    object-fit: cover;
+}
+
+.homecontents {
+    position: absolute;
+    padding: 1vw 1vw;
+    top: 56%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+
+}
+
+.page1ptests {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    height: auto;
+}
+
+.homecontents h1 {
+    color: #252525;font-family: "Host Grotesk Placeholder", sans-serif;
+;
+    font-size: 4em;
+}
+
+.homecontents p {
+    color: #545454bf;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+@media (max-width:1024px) {
+  
+
+    .homecontents h1 {
+        font-size: 3.88em;font-family: "Host Grotesk", "Host Grotesk Placeholder", sans-serif;
+    }}
+
+@media (max-width:768px) {
+    .homecontents p {
+
+        font-size: 1rem;
+       
+    }
+
+    .homecontents h1 {
+        font-size: 3em;font-family: "Host Grotesk", "Host Grotesk Placeholder", sans-serif;
+    }
+
+    .time {
+        display: none;
+    }
+
+    .homecontents {
+top: 8%;
+        padding: 5vw 4vw;
+        background: #f0f8ff17;
+        gap: 20em;
+    }
+}
+
+@media (max-width:426px) {
+    .homecontents p {
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
+    .homecontents h1 {
+        font-size: 2em;font-family: "Host Grotesk", "Host Grotesk Placeholder", sans-serif;
+        /* font-weight: 600; */
+    }
+
+    .homeimg {
+        padding: 20vw 3.1vw;
+    }
+
+    .homecontents {
+top: 8%;
+        padding: 5vw 4vw;
+        background: #f0f8ff17;
+        gap: 17em;
+    }
+
+
+}
